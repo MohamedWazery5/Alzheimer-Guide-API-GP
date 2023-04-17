@@ -1,0 +1,1338 @@
+{
+	"info": {
+		"_postman_id": "2eff63ab-ff7a-43a8-9dd2-7052db3211fe",
+		"name": "GP_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23687184"
+	},
+	"item": [
+		{
+			"name": "Patients",
+			"item": [
+				{
+					"name": "delete Patient",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/patient/31?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzczNDk1ODIsIm5iZiI6MTY3NzM0OTU4MiwianRpIjoiT0pWMGVJWmJvS0RDUkZ6VyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.66UJyIteoiDM-cGvFKJWBrE-8f8g1j5Gu23k4pTslQ8&api_password={{api_password}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"patient",
+								"31"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NzczNDk1ODIsIm5iZiI6MTY3NzM0OTU4MiwianRpIjoiT0pWMGVJWmJvS0RDUkZ6VyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.66UJyIteoiDM-cGvFKJWBrE-8f8g1j5Gu23k4pTslQ8"
+								},
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPatient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/patient/3?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM&api_password={{api_password}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"patient",
+								"3"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM"
+								},
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddPatient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "yara",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "testtt@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "admin123",
+									"type": "text"
+								},
+								{
+									"key": "Stage",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "new Ciro",
+									"type": "text"
+								},
+								{
+									"key": "birth_date",
+									"value": "2023-02-07",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "011111",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "gender",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "caregiver_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/patient?api_password={{api_password}}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"patient"
+							],
+							"query": [
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Patient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "yara",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "testtt@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "admin123",
+									"type": "text"
+								},
+								{
+									"key": "Stage",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "new Ciro",
+									"type": "text"
+								},
+								{
+									"key": "birth_date",
+									"value": "2023-02-07",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "011111",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "gender",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "caregiver_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/patient?api_password={{api_password}}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"patient"
+							],
+							"query": [
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPatients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/patients/1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM&api_password={{api_password}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"patients",
+								"1"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM"
+								},
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Memory",
+			"item": [
+				{
+					"name": "AddMemory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ffirst",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "this is my first Memory",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "patient_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/memory?api_password={{api_password}}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc0OTc1MjYsIm5iZiI6MTY3NzQ5NzUyNiwianRpIjoiRWk2MWF5Z01nOU92VWtzRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4aBzxvd1qfU20h2beLd4fMZGZQTDJtdfe-NYVnjy9WE",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"memory"
+							],
+							"query": [
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc0OTc1MjYsIm5iZiI6MTY3NzQ5NzUyNiwianRpIjoiRWk2MWF5Z01nOU92VWtzRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4aBzxvd1qfU20h2beLd4fMZGZQTDJtdfe-NYVnjy9WE"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getMemory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/memory/3?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc0OTc1MjYsIm5iZiI6MTY3NzQ5NzUyNiwianRpIjoiRWk2MWF5Z01nOU92VWtzRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4aBzxvd1qfU20h2beLd4fMZGZQTDJtdfe-NYVnjy9WE&api_password={{api_password}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"memory",
+								"3"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc0OTc1MjYsIm5iZiI6MTY3NzQ5NzUyNiwianRpIjoiRWk2MWF5Z01nOU92VWtzRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4aBzxvd1qfU20h2beLd4fMZGZQTDJtdfe-NYVnjy9WE"
+								},
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Memories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/memories/17?api_password={{api_password}}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc0OTc1MjYsIm5iZiI6MTY3NzQ5NzUyNiwianRpIjoiRWk2MWF5Z01nOU92VWtzRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4aBzxvd1qfU20h2beLd4fMZGZQTDJtdfe-NYVnjy9WE",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"memories",
+								"17"
+							],
+							"query": [
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc0OTc1MjYsIm5iZiI6MTY3NzQ5NzUyNiwianRpIjoiRWk2MWF5Z01nOU92VWtzRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4aBzxvd1qfU20h2beLd4fMZGZQTDJtdfe-NYVnjy9WE"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Memory",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/memory/9?api_password={{api_password}}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc0OTc1MjYsIm5iZiI6MTY3NzQ5NzUyNiwianRpIjoiRWk2MWF5Z01nOU92VWtzRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4aBzxvd1qfU20h2beLd4fMZGZQTDJtdfe-NYVnjy9WE",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"memory",
+								"9"
+							],
+							"query": [
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc0OTc1MjYsIm5iZiI6MTY3NzQ5NzUyNiwianRpIjoiRWk2MWF5Z01nOU92VWtzRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4aBzxvd1qfU20h2beLd4fMZGZQTDJtdfe-NYVnjy9WE"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateMemory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "memory updated",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "memory description",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/memory/13?api_password={{api_password}}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc0OTc1MjYsIm5iZiI6MTY3NzQ5NzUyNiwianRpIjoiRWk2MWF5Z01nOU92VWtzRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4aBzxvd1qfU20h2beLd4fMZGZQTDJtdfe-NYVnjy9WE",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"memory",
+								"13"
+							],
+							"query": [
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc0OTc1MjYsIm5iZiI6MTY3NzQ5NzUyNiwianRpIjoiRWk2MWF5Z01nOU92VWtzRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4aBzxvd1qfU20h2beLd4fMZGZQTDJtdfe-NYVnjy9WE"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tasks",
+			"item": [
+				{
+					"name": "Add Task",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test service task",
+									"type": "text"
+								},
+								{
+									"key": "details",
+									"value": "egefw",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "08:00:00",
+									"type": "text"
+								},
+								{
+									"key": "repeats_per_day",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2023-04-01",
+									"type": "text"
+								},
+								{
+									"key": "end_date",
+									"value": "2023-05-01",
+									"type": "text"
+								},
+								{
+									"key": "repeat_typeID",
+									"value": "3",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patient_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "days[0]",
+									"value": "fri",
+									"type": "text"
+								},
+								{
+									"key": "days[1]",
+									"value": "sat",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/task?api_password={{api_password}}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"task"
+							],
+							"query": [
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Task",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test service task",
+									"type": "text"
+								},
+								{
+									"key": "details",
+									"value": "egefw",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "08:00:00",
+									"type": "text"
+								},
+								{
+									"key": "repeats_per_day",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2023-04-01",
+									"type": "text"
+								},
+								{
+									"key": "end_date",
+									"value": "2023-05-01",
+									"type": "text"
+								},
+								{
+									"key": "repeat_typeID",
+									"value": "3",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "days[0]",
+									"value": "fri",
+									"type": "text"
+								},
+								{
+									"key": "days[1]",
+									"value": "sat",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/task/?api_password={{api_password}}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"task",
+								""
+							],
+							"query": [
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Task",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/task/58?api_password={{api_password}}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"task",
+								"58"
+							],
+							"query": [
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Task",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/task/64?api_password={{api_password}}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"task",
+								"64"
+							],
+							"query": [
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Tasks",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "task 1",
+									"type": "text"
+								},
+								{
+									"key": "details",
+									"value": "jndsdjklnajn",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "17:30:10",
+									"type": "text"
+								},
+								{
+									"key": "repeats_per_day",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2023-03-29",
+									"type": "text"
+								},
+								{
+									"key": "end_date",
+									"value": "2023-04-29",
+									"type": "text"
+								},
+								{
+									"key": "repeat_typeID",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "days",
+									"value": "[]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/tasks/1?api_password={{api_password}}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"tasks",
+								"1"
+							],
+							"query": [
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Today Tasks",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "task 1",
+									"type": "text"
+								},
+								{
+									"key": "details",
+									"value": "jndsdjklnajn",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "17:30:10",
+									"type": "text"
+								},
+								{
+									"key": "repeats_per_day",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2023-03-29",
+									"type": "text"
+								},
+								{
+									"key": "end_date",
+									"value": "2023-04-29",
+									"type": "text"
+								},
+								{
+									"key": "repeat_typeID",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "days",
+									"value": "[]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/tasks/today/1?api_password={{api_password}}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"tasks",
+								"today",
+								"1"
+							],
+							"query": [
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "History",
+			"item": [
+				{
+					"name": "get tasks per day",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/history/1/2023-04-07?api_password={{api_password}}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"history",
+								"1",
+								"2023-04-07"
+							],
+							"query": [
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get history per patient",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/history/patient/1?api_password={{api_password}}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"history",
+								"patient",
+								"1"
+							],
+							"query": [
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get history per task",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/history/task/33?api_password={{api_password}}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"history",
+								"task",
+								"33"
+							],
+							"query": [
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Confirm Task",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "task_id",
+									"value": "43",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/myoss/Downloads/facultyLogo2.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/task/confirm?api_password={{api_password}}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"task",
+								"confirm"
+							],
+							"query": [
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Caregiver",
+			"item": [
+				{
+					"name": "registerCaregiver",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Muhammed wazery",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "wazery4@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "admin123",
+									"type": "text"
+								},
+								{
+									"key": "Role",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/auth/registercaregiver?api_password={{api_password}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"registercaregiver"
+							],
+							"query": [
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCaregiver",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/caregiver/1?api_password={{api_password}}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"caregiver",
+								"1"
+							],
+							"query": [
+								{
+									"key": "api_password",
+									"value": "{{api_password}}"
+								},
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "hajar@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/auth/login?api_password={{api_password}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "api_password",
+							"value": "{{api_password}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/user-profile?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTYzNTcsIm5iZiI6MTY3Nzc1NjM1NywianRpIjoiQVQxUGVPRXZubWk5STlUSiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.PuAnpnf0_PCKgWoRq3UdbTMa3BjDLGZJ06Bv21w1zI8&api_password={{api_password}}",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"user-profile"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTYzNTcsIm5iZiI6MTY3Nzc1NjM1NywianRpIjoiQVQxUGVPRXZubWk5STlUSiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.PuAnpnf0_PCKgWoRq3UdbTMa3BjDLGZJ06Bv21w1zI8"
+						},
+						{
+							"key": "api_password",
+							"value": "{{api_password}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/auth/logout?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc0NDE0MTIsIm5iZiI6MTY3NzQ0MTQxMiwianRpIjoiRkp0ZHZZRE5KenhhODFZWiIsInN1YiI6IjQyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.slt2k-PnSUC3jkQU3CHv42QqHNH5-gkdSnrt4ITB42Q&api_password={{api_password}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc0NDE0MTIsIm5iZiI6MTY3NzQ0MTQxMiwianRpIjoiRkp0ZHZZRE5KenhhODFZWiIsInN1YiI6IjQyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.slt2k-PnSUC3jkQU3CHv42QqHNH5-gkdSnrt4ITB42Q"
+						},
+						{
+							"key": "api_password",
+							"value": "{{api_password}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/history/1/2023-04-03?api_password={{api_password}}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"history",
+						"1",
+						"2023-04-03"
+					],
+					"query": [
+						{
+							"key": "api_password",
+							"value": "{{api_password}}"
+						},
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2Nzc3NTc5ODUsIm5iZiI6MTY3Nzc1Nzk4NSwianRpIjoid3lRMUp6anVEcjFvYkFZVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-izA-Ze_ai3rL8t0q1CLqBc-iTw2kDTn2lt2RCZE2DM"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		},
+		{
+			"key": "api_password",
+			"value": "x5VUNpan7jk"
+		}
+	]
+}
